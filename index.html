@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://light1726.github.io/voice_conversion_demo/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Voice Conversion Demo</title>
+	</head>
+	<body><h2 align="center">Audio samples of the paper - Jointly Trained Conversion Model and WaveNet Vocoder for Non-parallel Voice Conversion using Mel-spectrograms and Phonetic Posteriorgrams</h2>
+	<h2 align="center">Songxiang Liu, Helen Meng</h2>
+	
+		<table border="1px" align="center">
+			<tbody><tr>
+				<th>System</th>
+				<th>Description</th>
+			</tr>
+			<!-- <tr>
+				<td>Ablation 1</td>
+				<td>WaveNet conditioned on raw PPGs and Log F0</td>
+			</tr>
+			<tr>
+				<td>Ablation 2</td>
+				<td>WaveNet conditioned on PPGs and Log F0 processed by BLSTM</td>
+			</tr>
+			<tr>
+				<td>Baseline</td>
+				<td>WaveNet conditioned on MCEPs predicted by a BLSTM conversion function from PPGs
+				</td>
+			</tr> -->
+			<tr>
+				<td>Proposed</td>
+				<td>Joint train</td>
+			</tr>
+		</tbody></table>
+		<h2>Converted Speech Samples</h2>
+		<h2>Male-to-Female</h2>
+		<table style="width:100%">
+		  <tbody><tr>
+			<th>index</th>
+			<th>Source Speech</th>
+			<th>Target Speech</th> 
+			<th>Ablation 1</th>
+			<th>Ablation 2</th>
+			<th>Baseline</th>
+			<th>Proposed</th>
+		  </tr>
+		  <tr>
+			<th>1.m2f1</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/m/arctic_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/f/arctic_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/m2f/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/m2f/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/m2f/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/m2f/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+
+
+		  </tr>
+		  </tbody></table>
+		  <p>I have no idea, replied Philip.</p>
+		  <table style="width:100%">
+		  <tbody><tr>
+		  <th>2.m2f2</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/m/arctic_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/f/arctic_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/m2f/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/m2f/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/m2f/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/m2f/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		</tbody></table>
+		<p>Anyway, no one saw her like that.</p>
+		<h2>Female-to-Female</h2>
+				<table style="width:100%">
+		  <tbody><tr>
+			<th>index</th>
+			<th>Source Speech</th>
+			<th>Target Speech</th> 
+			<th>Ablation 1</th>
+			<th>Ablation 2</th>
+			<th>Baseline</th>
+			<th>Proposed</th>
+		  </tr>
+		  <tr>
+			<th>3.f2f1</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/f/arctic_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/f/arctic_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/f2f/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/f2f/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/f2f/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/f2f/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		  </tbody></table>
+		  <p>That is the strange part of it.</p>
+		  <table style="width:100%">
+		  <tbody><tr>
+		  <th>4.f2f2</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/f/arctic_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/f/arctic_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/f2f/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/f2f/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/f2f/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/f2f/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		  
+		</tbody></table>
+		<p>Her mouth opened, but instead of speaking she drew a long sigh.</p>
+		<h2>Male-to-Male</h2>
+				<table style="width:100%">
+		  <tbody><tr>
+			<th>index</th>
+			<th>Source Speech</th>
+			<th>Target Speech</th> 
+			<th>Ablation 1</th>
+			<th>Ablation 2</th>
+			<th>Baseline</th>
+			<th>Proposed</th>
+		  </tr>
+		  <tr>
+		  <th>5.m2m1</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/m/arctic_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/m/arctic_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/m2m/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/m2m/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/m2m/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/m2m/bdl_a0057.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		  </tbody></table>
+		  <p>I have no idea, replied Philip.</p>
+		  <table style="width:100%">
+		  <tbody><tr>
+		  <th>6.m2m2</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/m/arctic_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/m/arctic_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/m2m/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/m2m/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/m2m/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/m2m/bdl_a0060.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		  
+		</tbody></table>
+		<p>Anyway, no one saw her like that.</p>
+		<h2>Female-to-Male</h2>
+				<table style="width:100%">
+		  <tbody><tr>
+			<th>index</th>
+			<th>Source Speech</th>
+			<th>Target Speech</th> 
+			<th>Ablation 1</th>
+			<th>Ablation 2</th>
+			<th>Baseline</th>
+			<th>Proposed</th>
+		  </tr>
+		  <tr>
+		  <th>7.f2m1</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/f/arctic_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/m/arctic_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/f2m/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/f2m/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/f2m/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/f2m/clb_b0154.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		  </tbody></table>
+		  <p>That is the strange part of it.</p>
+		  <table style="width:100%">
+		  <tbody><tr>
+		  <th>8.f2m2</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/source/f/arctic_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/target/m/arctic_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th> 
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system4/f2m/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system2/f2m/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system1/f2m/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+			<th>
+					<audio controls="" style="width: 200px;">
+					  <source src="./wavs/system3/f2m/clb_b0259.wav" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</th>
+		  </tr>
+		</tbody></table>
+		<p>Her mouth opened, but instead of speaking she drew a long sigh.</p>
+	
+</body></html>

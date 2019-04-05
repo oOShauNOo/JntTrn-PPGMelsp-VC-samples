@@ -9,10 +9,18 @@
 	<p><strong>Abstract: </strong>The N10 system in the Voice Conversion Challenge 2018 (VCC 2018) has achieved high voice conversion (VC) performance in terms of speech naturalness and speaker similarity. We believe that further improvements can be gained from joint optimization (instead of separate optimization) of the conversion model and WaveNet vocoder, as well as leveraging information from the acoustic representation of the speech waveform, e.g. from Mel-spectrograms. In this paper, we propose a VC architecture to jointly train a conversion model that maps phonetic posteriorgrams (PPGs) to Mel-spectrograms and a WaveNet vocoder. The conversion model has a bottle-neck layer, whose outputs are concatenated with PPGs before being fed into the WaveNet vocoder as local conditioning. A weighted sum of a Mel-spectrogram prediction loss and a WaveNet loss is used as the objective function to jointly optimize parameters of the conversion model and the WaveNet vocoder. Objective and subjective evaluation results show that the proposed approach is capable of achieving improved quality in voice conversion in terms of speech naturalness and speaker similarity of the converted speech for both cross-gender and intra-gender conversions.</p>
 <hr>
 
+<h2>System Description</h3>
+<p><strong>Baseline 1:</strong> Separately trained PPG-to-Mel-spectrogram conversion model and the WaveNet vocoder.</p>
+<p><strong>Baseline 2:</strong> Jointly trained condition network and the WaveNet vocoder.</p>
+<p><strong>Proposed:</strong> Jointly trained PPG-to-Mel-spectrogram conversion model and the WaveNet vocoder.</p>
+<p><strong>Ablation 1:</strong> Remove the top FC layer of the conversion model from the proposed approach.</p>
+<p><strong>Ablation 2:</strong> Remove the PPG residual connection from the proposed approach and only feed the BN features to the WaveNet vocoder.</p>
+
+<hr>
 
 <h2>System Comparison</h3>
-<p>Source speakers: slt and rms from <a href="http://www.festvox.org/cmu_arctic/"> CMU Arctic dataset</a>.</p>
-<p>Target speakers: clb and bdl from CMU Arctic dataset.</p>
+<p><strong>Source speakers:</strong> "slt" and "rms" from <a href="http://www.festvox.org/cmu_arctic/"> CMU Arctic dataset</a>.</p>
+<p><strong>Target speakers:</strong> "clb" and "bdl" from CMU Arctic dataset.</p>
 
 <!-- F-F -->
 <h3>Female-to-Female converison (slt -> clb)</h3>
